@@ -170,4 +170,9 @@ Public Class Form1
             conn.Close()
         End Try
     End Sub
+
+    Private Sub Form1_Click(sender As Object, e As EventArgs) Handles MyBase.Click
+        txt_prodno.ReadOnly = False
+        btn_save.Enabled = True
+    End Sub
 End Class
